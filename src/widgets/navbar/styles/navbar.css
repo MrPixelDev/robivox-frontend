@@ -1,0 +1,1 @@
+.nav{display:flex;flex-direction:row}.nav-text{padding:.7rem;font-size:1.1rem;color:inherit;transition:.3s}@media(max-width: 420px){.nav-text--register{display:none}}.nav-text:hover{cursor:pointer;color:#007bff;transition:.3s}

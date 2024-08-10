@@ -1,0 +1,96 @@
+.registration,
+.login {
+    &_title {
+        display: flex;
+        justify-content: center;
+        font-weight: bold;
+        font-size: 30px;
+        margin: 60px 0;
+        &__h1 {
+            font-size: 2.1rem;
+            font-weight: 700;
+            @media(max-width: 620px) {
+                font-size: 1.7rem;
+            }
+        }
+    }
+    &_form {
+        max-width: 350px;
+        margin: 0 auto;
+        margin-bottom: 60px;
+        &__inputs {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+        &__buttons {
+            margin-bottom: 5px;
+            height: 39px;
+            width: 100%;
+            margin-bottom: 0.5rem;
+        }
+        &__social {
+            text-align: center;
+            margin: 15px 0 -15px;
+            ul {
+                padding: 5px 0 12px;
+                display: flex;
+                margin: 0 auto 20px;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+                li {
+                    cursor: pointer;
+                    position: relative;
+                    display: inline-block;
+                    width: 45px;
+                    height: 45px;
+                    margin-right: 5px;
+                }
+                .google {
+                    background: url('/ico/googl_big.svg');
+                }
+                .mailru {
+                    background: url('/ico/mail_big.svg');
+                }
+                .yandex {
+                    background: url('/ico/ya_big.svg');
+                }
+                .vk {
+                    background: url('/ico/vk_big.svg');
+                }
+            }
+        }
+        &__agreement {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 20px;
+            font-size: 12px;
+            letter-spacing: 0.01em;
+            span {
+                margin-bottom: 5px;
+                color: #637683;
+                letter-spacing: 0;
+                text-align: center;
+                a {
+                    text-decoration: underline;
+                    color: #007bff;
+                }
+            }
+        }
+        &__login {
+            font-size: 12px;
+            letter-spacing: 0;
+            text-align: center;
+            width: auto;
+            padding: 0;
+            color: #706E75;
+            a {
+                text-decoration: underline;
+                color: #007bff;
+            }
+        }
+    }
+}

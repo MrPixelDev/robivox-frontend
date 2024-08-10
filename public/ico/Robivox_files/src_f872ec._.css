@@ -1,0 +1,388 @@
+/* [project]/src/pages/mainpage/styles/mainpage.css [app-client] (css) */
+.main {
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* [project]/src/widgets/forms/styles/forms.css [app-client] (css) */
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form_title {
+  display: block;
+  width: 100%;
+  max-width: 685px;
+  margin: 0 0 20px 0;
+}
+.form_subtitle {
+  color: #637683;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+.form_input {
+  position: relative;
+  display: flex;
+  margin-bottom: 10px;
+  justify-content: space-between;
+  height: 48px;
+  align-items: center;
+  background: #fff;
+  border: 1px solid #d9dee8;
+  border-radius: 8px;
+}
+.form_input__left {
+  margin-left: 16px;
+}
+.form_input__starrequired {
+  color: #d93333;
+}
+.form_input__undertext {
+  position: absolute;
+  text-align: left;
+  left: 3px;
+  top: 50px;
+  width: 100%;
+  font-size: 12px;
+  color: #637683;
+}
+.form_input input {
+  border: none;
+  font-size: 18px;
+  line-height: 27px;
+  outline: none;
+  margin-left: 5px;
+}
+.form_checkbox {
+  margin: 12px 0 24px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.form_checkbox .checkbox {
+  width: 18px;
+  height: 18px;
+  background: rgba(0, 0, 0, 0);
+  border: 2px solid #9fbccf;
+  border-radius: 4px;
+  position: relative;
+  cursor: pointer;
+  padding: 0;
+  color: #fff;
+  margin-right: 11px;
+}
+.form_checkbox .checkbox .ok {
+  display: none;
+  position: absolute;
+  top: -4px;
+  left: 1px;
+}
+.form_checkbox input {
+  visibility: hidden;
+  width: 0;
+}
+.form_checkbox__span {
+  padding: 0;
+  width: auto;
+  font-size: 12px;
+  color: #637683;
+}
+.form_button {
+  border: none;
+  background: #0084ff;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: .01em;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+}
+.form_voiceover {
+  max-width: 730px;
+  margin: 0 auto;
+  color: #002033;
+  width: 100%;
+}
+.form_voiceover__select-block {
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.form_voiceover__text-area {
+  background: #fff;
+  box-shadow: 0px 0px 50px rgba(16, 12, 46, .1);
+  border-radius: 16px;
+}
+.form_voiceover__text-area .editor-els {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-bottom: 1px solid #e0e1e5;
+}
+.form_voiceover__text-area .editor-els__element {
+  position: relative;
+  height: 100%;
+  padding: 0 17px;
+  min-height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.form_voiceover__text-area .editor-els__element > img {
+  height: 100%;
+  width: 23px;
+  vertical-align: middle;
+  border-style: none;
+  margin-right: 7px;
+}
+.form_voiceover__text-area .textarea-container {
+  text-align: left;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  margin-top: 5px;
+  padding: 8px;
+  padding-left: 20px;
+  padding-bottom: 0;
+  font-size: 20px;
+}
+.form_voiceover__text-area .textarea-container .close-block {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 80px;
+}
+.form_voiceover__text-area .textarea-container .close-block .close-btn {
+  background: url("/ico/close.png");
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 30px;
+  background-position: center;
+  margin: 10px auto;
+  position: relative;
+}
+.form_voiceover__text-area .textarea-container .close-block .close-btn:hover {
+  background-color: #e3e3e4;
+}
+.form_voiceover__text-area .textarea-container .close-block .close-btn .describe {
+  color: #333;
+  position: absolute;
+  background: #fff;
+  padding: 5px 10px;
+  border-radius: 9px;
+  box-shadow: 0px -1px 3px -1px #333;
+  bottom: 50px;
+  font-size: 13px;
+  left: -14px;
+}
+.form_voiceover__text-area .textarea-container textarea {
+  width: calc(100% - 80px);
+  resize: none;
+  min-height: 280px;
+  height: 100%;
+  border: none;
+  padding: 0;
+  outline: none;
+  font-size: 20px;
+  overflow: auto;
+}
+.form_voiceover__counter {
+  margin: auto;
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.form_voiceover__counter .counter__wrapper {
+  margin-right: 10px;
+  flex: 25%;
+  max-width: 25%;
+  position: relative;
+}
+.form_voiceover__counter .counter__wrapper span {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: .015em;
+  color: #637683;
+  margin: auto;
+  margin-top: 10px;
+}
+.form_voiceover__synthesize {
+  text-align: left;
+  margin: 0;
+  margin-bottom: 37px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.form_voiceover__synthesize .synthesize_button {
+  margin-right: 10px;
+  height: 54px;
+}
+.form_voiceover__synthesize .synthesize_button button {
+  width: 100%;
+  max-width: 210px;
+  height: 100%;
+  max-height: 39px;
+  background: #0084ff;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  padding: 0 12px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+.form_voiceover__synthesize .synthesize_select {
+  margin-right: 30px;
+  max-width: 20%;
+}
+.form_voiceover__synthesize .synthesize_select__wrapper {
+  width: 50%;
+  margin-bottom: 1rem;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+.form_voiceover__synthesize .synthesize_select__wrapper select {
+  cursor: pointer;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(16, 12, 46, .1);
+  border-radius: 8px;
+  -webkit-appearance: auto;
+  -moz-appearance: auto;
+  appearance: auto;
+  border: 0;
+  padding: 0;
+  padding-right: 8px;
+  padding-left: 8px;
+  position: relative;
+  margin-bottom: 0;
+  display: inline-block;
+  height: calc(1.5em + .75rem + 2px);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  vertical-align: middle;
+  width: 80px;
+  min-width: auto;
+  flex: 0;
+  transition: background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+.form__area--row {
+  padding: 0;
+  justify-content: space-between;
+  text-align: center;
+  display: flex;
+  flex: 0 0 100%;
+  max-width: 100%;
+  position: relative;
+  width: 100%;
+  padding-left: .5rem;
+}
+.form__area--row .form_select__wrapper {
+  width: 50%;
+  margin-bottom: 1rem;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+.form__area--row .form_select__wrapper select {
+  cursor: pointer;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(16, 12, 46, .1);
+  border-radius: 8px;
+  -webkit-appearance: auto;
+  -moz-appearance: auto;
+  appearance: auto;
+  padding-right: 8px;
+  padding-left: 8px;
+  position: relative;
+  margin-bottom: 0;
+  display: inline-block;
+  height: calc(1.5em + .75rem + 2px);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  vertical-align: middle;
+  max-width: 95%;
+  flex: 1;
+  transition: background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+.form__area--row .form_select__wrapper select option {
+  position: relative;
+}
+.form__area--row .form_select__wrapper select .option--ru::after {
+  content: "";
+  background: url("/ico/ru-lang.jpg");
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.form__area--row .form_select__wrapper select .option--en::after {
+  content: "";
+  background: url("/ico/en-lang.jpg");
+}
+.form__area--row .form_select__wrapper select .option--tur::after {
+  content: "";
+  background: url("/ico/tur-lang.jpg");
+}
+.form_select {
+  margin: 0;
+  flex: none;
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+}
+.form_select .select-wrapper {
+  width: 355px;
+  outline: none !important;
+  border: 0 !important;
+  background-color: #e7ebf3 !important;
+  box-shadow: unset !important;
+  border-radius: 8px !important;
+  box-sizing: border-box;
+  display: inline-block;
+  margin: 0;
+  position: relative;
+  vertical-align: middle;
+}
+.form_select select {
+  border: 0 !important;
+  clip: rect(0 0 0 0) !important;
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  white-space: nowrap !important;
+}
+
+/*# sourceMappingURL=src_f872ec._.css.map*/

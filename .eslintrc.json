@@ -1,0 +1,10 @@
+{
+  "extends": "next/core-web-vitals",
+  "rules": {
+    "no-console": "warn",
+    "semi": 2,
+    "no-unused-vars": "warn",
+    "semi-spacing": 2,
+    "space-before-function-paren": 0
+  }
+}

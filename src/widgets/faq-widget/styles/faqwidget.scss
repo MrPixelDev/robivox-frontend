@@ -1,0 +1,20 @@
+.faq-widget {
+    text-align: left;
+    &__title {
+        margin-bottom: 18px;
+        line-height: 29px;
+    }
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+    &__item {
+        margin-bottom: 10px;
+        & a {
+            color: #0084ff;
+            &:hover {
+                color: inherit;
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+.banner-line {
+    width: 100vw;
+    background-color: #0084ff;
+    text-align: center;
+    padding: 8px 0 8px;
+    // @media (max-width: 420px) {
+    //     padding: 8px 0 8px;
+    // }
+    & span {
+        color: white;
+        & a {
+            text-decoration: unset;
+            color: white;
+        }
+        & a:hover {
+            text-decoration: underline;
+        }
+    }
+}

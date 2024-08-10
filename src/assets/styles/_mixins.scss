@@ -1,0 +1,74 @@
+@import 'variables';
+
+@mixin phone {
+    @media screen and (max-width: $phone-width) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media screen and (max-width: $mobile-width) {
+        @content;
+    }
+}
+
+// @mixin tablet {
+//     @media screen and (min-width: $tablet-width + 1px) and (max-width: $desktop-width - 1px) {
+//         @content;
+//     }
+// }
+
+@mixin desktop {
+    @media screen and (min-width: $desktop-width) {
+        @content;
+    }
+}
+
+@mixin adaptive($from, $to) {
+    @media screen and (min-width: $from) and (max-width: $to) {
+        @content;
+    }
+}
+
+@mixin hover {
+    @media (hover: hover) {
+        @content;
+    }
+}
+
+@mixin dark {
+    @media (prefers-color-scheme: dark) {
+        @content;
+    }
+}
+
+@mixin light {
+    @media (prefers-color-scheme: light) {
+        @content;
+    }
+}
+
+@mixin touch {
+    @media (hover: none) and (pointer: coarse) {
+        @content;
+    }
+}
+
+@mixin no-touch {
+    @media (hover: hover) and (pointer: fine) {
+        @content;
+    }
+}
+
+@mixin no-touch-hover {
+    @media (hover: hover) and (pointer: fine) {
+        @content;
+    }
+}
+
+@mixin font($font-family, $font-file) {
+    @font-face {
+        font-family: $font-family;
+        src: url($font-file) format('truetype');
+    }
+}

@@ -1,0 +1,364 @@
+/* [next]/internal/font/google/open_sans_9a9dad55.module.css [app-client] (css) */
+@font-face {
+    font-family: '__Open_Sans_9a9dad';
+    font-style: normal;
+    font-weight: 300 800;
+    font-stretch: 100%;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/opensans/v40/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSKmu0SC55K5gw.woff2)
+        format('woff2');
+    unicode-range: u+0460-052F, u+1C80-1C88, u+20B4, u+2DE0-2DFF, u+A640-A69F, u+FE2E-FE2F;
+}
+@font-face {
+    font-family: '__Open_Sans_9a9dad';
+    font-style: normal;
+    font-weight: 300 800;
+    font-stretch: 100%;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/opensans/v40/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSumu0SC55K5gw.woff2)
+        format('woff2');
+    unicode-range: u+0301, u+0400-045F, u+0490-0491, u+04B0-04B1, u+2116;
+}
+@font-face {
+    font-family: '__Open_Sans_9a9dad';
+    font-style: normal;
+    font-weight: 300 800;
+    font-stretch: 100%;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/opensans/v40/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSOmu0SC55K5gw.woff2)
+        format('woff2');
+    unicode-range: u+1F00-1FFF;
+}
+@font-face {
+    font-family: '__Open_Sans_9a9dad';
+    font-style: normal;
+    font-weight: 300 800;
+    font-stretch: 100%;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/opensans/v40/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSymu0SC55K5gw.woff2)
+        format('woff2');
+    unicode-range: u+0370-0377, u+037A-037F, u+0384-038A, u+038C, u+038E-03A1, u+03A3-03FF;
+}
+@font-face {
+    font-family: '__Open_Sans_9a9dad';
+    font-style: normal;
+    font-weight: 300 800;
+    font-stretch: 100%;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/opensans/v40/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS2mu0SC55K5gw.woff2)
+        format('woff2');
+    unicode-range: u+0590-05FF, u+200C-2010, u+20AA, u+25CC, u+FB1D-FB4F;
+}
+@font-face {
+    font-family: '__Open_Sans_9a9dad';
+    font-style: normal;
+    font-weight: 300 800;
+    font-stretch: 100%;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/opensans/v40/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTVOmu0SC55K5gw.woff2)
+        format('woff2');
+    unicode-range: u+0302-0303, u+0305, u+0307-0308, u+0330, u+0391-03A1, u+03A3-03A9, u+03B1-03C9, u+03D1, u+03D5-03D6,
+        u+03F0-03F1, u+03F4-03F5, u+2034-2037, u+2057, u+20D0-20DC, u+20E1, u+20E5-20EF, u+2102, u+210A-210E,
+        u+2110-2112, u+2115, u+2119-211D, u+2124, u+2128, u+212C-212D, u+212F-2131, u+2133-2138, u+213C-2140,
+        u+2145-2149, u+2190, u+2192, u+2194-21AE, u+21B0-21E5, u+21F1-21F2, u+21F4-2211, u+2213-2214, u+2216-22FF,
+        u+2308-230B, u+2310, u+2319, u+231C-2321, u+2336-237A, u+237C, u+2395, u+239B-23B6, u+23D0, u+23DC-23E1,
+        u+2474-2475, u+25AF, u+25B3, u+25B7, u+25BD, u+25C1, u+25CA, u+25CC, u+25FB, u+266D-266F, u+27C0-27FF,
+        u+2900-2AFF, u+2B0E-2B11, u+2B30-2B4C, u+2BFE, u+FF5B, u+FF5D, u+1D400-1D7FF, u+1EE00-1EEFF;
+}
+@font-face {
+    font-family: '__Open_Sans_9a9dad';
+    font-style: normal;
+    font-weight: 300 800;
+    font-stretch: 100%;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/opensans/v40/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTUGmu0SC55K5gw.woff2)
+        format('woff2');
+    unicode-range: u+0001-000C, u+000E-001F, u+007F-009F, u+20DD-20E0, u+20E2-20E4, u+2150-218F, u+2190, u+2192,
+        u+2194-2199, u+21AF, u+21E6-21F0, u+21F3, u+2218-2219, u+2299, u+22C4-22C6, u+2300-243F, u+2440-244A,
+        u+2460-24FF, u+25A0-27BF, u+2800-28FF, u+2921-2922, u+2981, u+29BF, u+29EB, u+2B00-2BFF, u+4DC0-4DFF,
+        u+FFF9-FFFB, u+10140-1018E, u+10190-1019C, u+101A0, u+101D0-101FD, u+102E0-102FB, u+10E60-10E7E, u+1D2C0-1D2D3,
+        u+1D2E0-1D37F, u+1F000-1F0FF, u+1F100-1F1AD, u+1F1E6-1F1FF, u+1F30D-1F30F, u+1F315, u+1F31C, u+1F31E,
+        u+1F320-1F32C, u+1F336, u+1F378, u+1F37D, u+1F382, u+1F393-1F39F, u+1F3A7-1F3A8, u+1F3AC-1F3AF, u+1F3C2,
+        u+1F3C4-1F3C6, u+1F3CA-1F3CE, u+1F3D4-1F3E0, u+1F3ED, u+1F3F1-1F3F3, u+1F3F5-1F3F7, u+1F408, u+1F415, u+1F41F,
+        u+1F426, u+1F43F, u+1F441-1F442, u+1F444, u+1F446-1F449, u+1F44C-1F44E, u+1F453, u+1F46A, u+1F47D, u+1F4A3,
+        u+1F4B0, u+1F4B3, u+1F4B9, u+1F4BB, u+1F4BF, u+1F4C8-1F4CB, u+1F4D6, u+1F4DA, u+1F4DF, u+1F4E3-1F4E6,
+        u+1F4EA-1F4ED, u+1F4F7, u+1F4F9-1F4FB, u+1F4FD-1F4FE, u+1F503, u+1F507-1F50B, u+1F50D, u+1F512-1F513,
+        u+1F53E-1F54A, u+1F54F-1F5FA, u+1F610, u+1F650-1F67F, u+1F687, u+1F68D, u+1F691, u+1F694, u+1F698, u+1F6AD,
+        u+1F6B2, u+1F6B9-1F6BA, u+1F6BC, u+1F6C6-1F6CF, u+1F6D3-1F6D7, u+1F6E0-1F6EA, u+1F6F0-1F6F3, u+1F6F7-1F6FC,
+        u+1F700-1F7FF, u+1F800-1F80B, u+1F810-1F847, u+1F850-1F859, u+1F860-1F887, u+1F890-1F8AD, u+1F8B0-1F8B1,
+        u+1F900-1F90B, u+1F93B, u+1F946, u+1F984, u+1F996, u+1F9E9, u+1FA00-1FA6F, u+1FA70-1FA7C, u+1FA80-1FA88,
+        u+1FA90-1FABD, u+1FABF-1FAC5, u+1FACE-1FADB, u+1FAE0-1FAE8, u+1FAF0-1FAF8, u+1FB00-1FBFF;
+}
+@font-face {
+    font-family: '__Open_Sans_9a9dad';
+    font-style: normal;
+    font-weight: 300 800;
+    font-stretch: 100%;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/opensans/v40/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSCmu0SC55K5gw.woff2)
+        format('woff2');
+    unicode-range: u+0102-0103, u+0110-0111, u+0128-0129, u+0168-0169, u+01A0-01A1, u+01AF-01B0, u+0300-0301,
+        u+0303-0304, u+0308-0309, u+0323, u+0329, u+1EA0-1EF9, u+20AB;
+}
+@font-face {
+    font-family: '__Open_Sans_9a9dad';
+    font-style: normal;
+    font-weight: 300 800;
+    font-stretch: 100%;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/opensans/v40/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSGmu0SC55K5gw.woff2)
+        format('woff2');
+    unicode-range: u+0100-02AF, u+0304, u+0308, u+0329, u+1E00-1E9F, u+1EF2-1EFF, u+2020, u+20A0-20AB, u+20AD-20C0,
+        u+2113, u+2C60-2C7F, u+A720-A7FF;
+}
+@font-face {
+    font-family: '__Open_Sans_9a9dad';
+    font-style: normal;
+    font-weight: 300 800;
+    font-stretch: 100%;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/opensans/v40/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-mu0SC55I.woff2)
+        format('woff2');
+    unicode-range: u+0000-00FF, u+0131, u+0152-0153, u+02BB-02BC, u+02C6, u+02DA, u+02DC, u+0304, u+0308, u+0329,
+        u+2000-206F, u+2074, u+20AC, u+2122, u+2191, u+2193, u+2212, u+2215, u+FEFF, u+FFFD;
+}
+@font-face {
+    font-family: '__Open_Sans_Fallback_9a9dad';
+    src: local('Arial');
+    ascent-override: 101.18%;
+    descent-override: 27.73%;
+    line-gap-override: 0%;
+    size-adjust: 105.64%;
+}
+.className__open_sans_9a9dad55__8dc05974 {
+    font-family: '__Open_Sans_9a9dad', '__Open_Sans_Fallback_9a9dad';
+    font-style: normal;
+}
+
+/* [project]/src/assets/styles/boxsizingBorder.css [app-client] (css) */
+.boxsizingBorder {
+    box-sizing: border-box;
+}
+
+/* [project]/src/assets/styles/nullstyle.css [app-client] (css) */
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+:focus,
+:active {
+    outline: none;
+}
+a:focus,
+a:active {
+    outline: none;
+}
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+input::-ms-clear {
+    display: none;
+}
+button {
+    cursor: pointer;
+}
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+a,
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+ul li {
+    list-style: none;
+}
+img {
+    vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+/* [project]/src/assets/styles/globals.css [app-client] (css) */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #e0e0e0;
+}
+::-webkit-scrollbar-track:hover {
+    background: #555;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+body:first-child {
+    text-align: center;
+}
+html {
+    background-color: #f7f8fb;
+    overflow-x: hidden;
+}
+.app {
+    z-index: 0;
+}
+.container {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    line-height: 1.5;
+}
+.container .h1 {
+    font-size: 2.1rem;
+    font-weight: 700;
+    line-height: 140%;
+}
+.main {
+    margin: 3rem auto;
+    max-width: 730px;
+}
+.widget__title--grey {
+    color: #637683;
+    font-size: 24px;
+}
+option {
+    font-weight: normal;
+    display: block;
+    min-height: 1.2em;
+}
+a,
+button,
+input {
+    cursor: pointer;
+}
+
+/* [project]/src/widgets/header/styles/headers.css [app-client] (css) */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    margin-bottom: 60px;
+}
+
+/* [project]/src/widgets/navbar/styles/navbar.css [app-client] (css) */
+.nav {
+    display: flex;
+    flex-direction: row;
+}
+.nav-text {
+    padding: 0.7rem;
+    font-size: 1.1rem;
+    color: inherit;
+    transition: 0.3s;
+}
+.nav-text:hover {
+    cursor: pointer;
+    color: #007bff;
+    transition: 0.3s;
+}
+
+/* [project]/src/widgets/logo/styles/logo.css [app-client] (css) */
+.logo {
+    position: relative;
+    height: 38px;
+}
+.logo-text {
+    margin: -5px 10px;
+    font-size: 1.9rem;
+    font-weight: 700;
+}
+.logo > a {
+    text-decoration: none;
+    color: #000;
+}
+.logo > a:hover {
+    cursor: pointer;
+    color: #0243d9;
+}
+.logo .flex {
+    display: flex;
+    height: 100%;
+}
+
+/* [project]/src/widgets/footer/styles/footers.css [app-client] (css) */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 18px;
+    margin: 24px auto 0;
+    border-top: 1px solid #ececec;
+    max-width: 730px;
+}
+.footer_section {
+    position: relative;
+    text-align: left;
+    height: 100%;
+}
+.footer_section .section_header__text {
+    font-weight: 600;
+    line-height: 24px;
+}
+.footer_section .section_links__link {
+    margin: 1rem 0;
+}
+.footer_section a {
+    text-decoration: unset;
+    color: #637683;
+    font-weight: 400;
+    line-height: 19px;
+}
+
+/* [project]/src/widgets/banners/lineBanner/styles/linebanner.css [app-client] (css) */
+.banner-line {
+    width: 100vw;
+    background-color: #0084ff;
+    text-align: center;
+    padding: 14px 0 8px;
+}
+.banner-line span {
+    color: #fff;
+}
+.banner-line span a {
+    text-decoration: unset;
+    color: #fff;
+}
+.banner-line span a:hover {
+    text-decoration: underline;
+}
+
+/*# sourceMappingURL=[root of the server]__444b9a._.css.map*/

@@ -1,0 +1,87 @@
+@import 'variables';
+@import 'mixins';
+@import url('./boxsizingBorder.css');
+@import url('./nullstyle.css');
+// @include font("Open Sans", "./OpenSans-VariableFont_wdth,wght.ttf");
+
+::-webkit-scrollbar {
+    width: 10px;
+    &-track {
+        background: #e0e0e0;
+        &:hover {
+            background: #555;
+        }
+    }
+    &-thumb {
+        background: #888;
+    }
+}
+
+body:first-child {
+    text-align: center;
+    font-family: Open-Sans;
+}
+
+html {
+    background-color: #f7f8fb;
+    overflow-x: hidden;
+}
+
+.app {
+    // overflow: hidden;
+    z-index: 0;
+}
+
+.container {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    line-height: 1.5;
+    @media (max-width: 768px) {
+        max-width: 95vw;
+        width: 95vw;
+        // margin: 0 1em;
+    }
+
+    .h1 {
+        font-size: 2.1rem;
+        font-weight: 700;
+        line-height: 140%;
+        @media(max-width: 768px) {
+            font-size: 1.9em;
+        }
+        @media(max-width: 420px) {
+            font-size: 1.3em;
+        }
+        // margin: 60px 0;
+    }
+}
+
+.main {
+    margin: 3rem auto;
+    max-width: 730px;
+}
+
+.widget {
+    &__title {
+        &--grey {
+            color: #637683;
+            font-size: 24px;
+        }
+    }
+}
+
+option {
+    font-weight: normal;
+    display: block;
+    min-height: 1.2em;
+}
+
+a,
+button,
+input {
+    cursor: pointer;
+}
+
+.yt_player_iframe {
+}
