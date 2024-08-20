@@ -88,7 +88,7 @@ const blockContent = [
     },
 ];
 
-const VoicesBlocks = () => {
+const VoicesBlocks = ({edite}: any) => {
     return (
         <div className="voicesblocks">
             <Article props={articleProps.examples} />
@@ -109,7 +109,7 @@ const VoicesBlocks = () => {
                                     )}
                                 </div>
                                 <div className="voiceblock__name">{b.name}</div>
-                                <div className="voiceblock__button">Выбрать голос</div>
+                                <div className="voiceblock__button" onClick={()=> edite(b.name)} >Выбрать голос</div>
                             </div>
                         </div>
                     );

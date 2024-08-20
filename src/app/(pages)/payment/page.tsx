@@ -1,6 +1,14 @@
+'use client';
 import '@/app/(pages)/payment/styles/payment.css';
+import { useState } from 'react';
 
 function PaymentPage() {
+    const [point, setPoint] = useState<number | string>(0);
+
+    const handleOpen = () => {
+        window.open('https://t.me/robivox_bot', 'target_');
+    };
+
     return (
         <div className="payment">
             <div className="payment-text">
@@ -33,7 +41,9 @@ function PaymentPage() {
                         <span className="amount">150 ₽</span>
                     </div>
                     <div className="payment_cards__coins">
-                        <span className="coins">Получите 150</span>
+                        <span className="coins">
+                            Получите <b>150</b>
+                        </span>
                     </div>
                     <div className="payment_cards__voices">
                         <div className="payment_cards__voices_default">
@@ -43,7 +53,7 @@ function PaymentPage() {
                             <p>обычным голосом</p>
                             <span>или 25 минут голосом PRO</span>
                         </div>
-                        <form className="payment_cards__choose" action="/payment/buy">
+                        <form className="payment_cards__choose" action="" onClick={() => handleOpen()}>
                             <button className="payment_cards__choose__button">Выбрать</button>
                         </form>
                     </div>
@@ -57,7 +67,9 @@ function PaymentPage() {
                         <span className="amount">500 ₽</span>
                     </div>
                     <div className="payment_cards__coins">
-                        <span className="coins">Получите 550</span>
+                        <span className="coins">
+                            Получите <b>550</b>
+                        </span>
                     </div>
                     <div className="payment_cards__voices">
                         <div className="payment_cards__voices_default">
@@ -67,7 +79,7 @@ function PaymentPage() {
                             <p>обычным голосом</p>
                             <span>или 95 минут голосом PRO</span>
                         </div>
-                        <form className="payment_cards__choose" action="/payment/buy">
+                        <form className="payment_cards__choose" action="" onClick={() => handleOpen()}>
                             <button className="payment_cards__choose__button">Выбрать</button>
                         </form>
                     </div>
@@ -80,7 +92,9 @@ function PaymentPage() {
                         <span className="amount">250 ₽</span>
                     </div>
                     <div className="payment_cards__coins">
-                        <span className="coins">Получите 270</span>
+                        <span className="coins">
+                            Получите <b>270</b>
+                        </span>
                     </div>
                     <div className="payment_cards__voices">
                         <div className="payment_cards__voices_default">
@@ -90,7 +104,7 @@ function PaymentPage() {
                             <p>обычным голосом</p>
                             <span>или 45 минут голосом PRO</span>
                         </div>
-                        <form className="payment_cards__choose" action="/payment/buy">
+                        <form className="payment_cards__choose" action="" onClick={() => handleOpen()}>
                             <button className="payment_cards__choose__button">Выбрать</button>
                         </form>
                     </div>
@@ -102,13 +116,15 @@ function PaymentPage() {
                 </div>
                 <div className="form_refill__input-row">
                     <div className="input__currency">
-                        <input type="number" placeholder="Введите сумму" />
+                        <input type="number" placeholder="Введите сумму" onChange={e => setPoint(e.target.value)} />
                     </div>
-                    <button className="refill__button">Пополнить</button>
+                    <button className="refill__button" onClick={() => handleOpen()}>
+                        Пополнить
+                    </button>
                 </div>
                 <div className="form_refill__bonus">
                     <span className="refill__bonus">
-                        Вы получите <b>0</b>
+                        Вы получите <b style={{ color: 'black' }}>{point}</b>
                     </span>
                 </div>
             </div>

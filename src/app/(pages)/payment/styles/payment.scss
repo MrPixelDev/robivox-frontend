@@ -2,7 +2,7 @@
     &-text {
         &_title {
             font-weight: 900;
-            font-size: 30px;
+            font-size: 25px;
             line-height: 36px;
             margin: 0 0 20px;
         }
@@ -16,6 +16,7 @@
             margin: 0 auto;
             color: #637683;
             margin-bottom: 2rem;
+            text-align: left;
         }
         &_warn {
             color: red;
@@ -45,7 +46,7 @@
             border-radius: 16px;
             position: relative;
             overflow: hidden;
-            @media(max-width: 1162px) {
+            @media (max-width: 1162px) {
                 border-width: 1px;
                 max-width: 230px;
                 margin: 0 auto;
@@ -79,11 +80,13 @@
             justify-content: center;
             align-items: center;
             position: relative;
+            font-size: 13px;
+            line-height: 150%;
             &::after {
                 content: '';
                 position: absolute;
-                top: 33%;
-                right: 2%;
+                top: 28%;
+                right: 10%;
                 background: url('/ico/coin.svg') no-repeat;
                 width: 15px;
                 height: 15px;
@@ -147,7 +150,7 @@
             width: 100%;
             color: #fff;
             padding: 45px 0 5px;
-            @media(max-width: 1162px) {
+            @media (max-width: 1162px) {
                 transform: rotate(-45deg) translate(-66%, -138%);
             }
         }
@@ -165,7 +168,7 @@
             display: inline-block;
             width: 100%;
             padding: 45px 0 5px;
-            @media(max-width: 1162px) {
+            @media (max-width: 1162px) {
                 transform: rotate(45deg) translate(-13%, -263px);
             }
         }
@@ -183,7 +186,7 @@
             display: inline-block;
             width: 100%;
             padding: 45px 0 3px;
-            @media(max-width: 1162px) {
+            @media (max-width: 1162px) {
                 padding: 45px 0 1px;
                 transform: rotate(45deg) translate(-12%, -277px);
             }
@@ -202,7 +205,7 @@
             display: inline-block;
             width: 100%;
             padding: 45px 0 2px;
-            @media(max-width: 1162px) {
+            @media (max-width: 1162px) {
                 padding: 45px 0 1px;
                 transform: rotate(45deg) translate(-13%, -277px);
             }
@@ -228,7 +231,7 @@
             // max-width: 350px;
             width: 100%;
             line-height: 0;
-            @media(max-width: 519px) {
+            @media (max-width: 519px) {
                 flex-direction: column;
             }
 
@@ -265,7 +268,7 @@
                 border: 1px solid rgba(0, 0, 0, 0);
                 font-weight: 600;
                 border-radius: 8px;
-                width: 25%;
+                width: 100%;
                 padding: 10px;
                 line-height: 150%;
                 transition: 0.25s all ease-in-out;
@@ -274,8 +277,8 @@
                 margin-left: 0;
                 margin-right: 4px;
                 font-size: inherit;
-                @media(max-width: 519px) {
-                    width: 50%;
+                @media (max-width: 519px) {
+                    // width: 50%;
                 }
             }
         }

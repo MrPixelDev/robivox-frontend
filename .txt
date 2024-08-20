@@ -1,0 +1,9 @@
+        "prebuild": "yarn precompile",
+        "predev": "yarn precompile",
+        "prestart": "yarn precompile",
+
+        Я не могу через них запустить сайт, так как работаю на windows, если они вам нужны, то можете поместить их в json-файл
+
+        /payment/buy
+
+        button url

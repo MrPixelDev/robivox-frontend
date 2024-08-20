@@ -10,11 +10,11 @@
             margin-bottom: 1rem;
             flex: 0 0 33.333%;
             max-width: 33.333%;
-            @media(max-width: 555px) {
+            @media (max-width: 555px) {
                 flex: 0 0 50%;
                 max-width: 50%;
             }
-            @media(max-width: 420px) {
+            @media (max-width: 420px) {
                 flex: 0 0 100%;
                 max-width: 100%;
             }
@@ -26,6 +26,10 @@
             }
             &__image {
                 position: relative;
+                height: 200px;
+                @media (max-width: 426px) {
+                    height: auto;
+                }
                 img {
                     border-radius: 9px 15px;
                     width: 100%;

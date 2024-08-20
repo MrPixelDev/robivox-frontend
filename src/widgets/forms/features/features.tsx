@@ -1,82 +1,141 @@
-'use client';
-import NextAuth from 'next-auth';
-import type { NextAuthConfig } from 'next-auth';
-// import { signIn } from '@/auth';
-import { AuthError } from 'next-auth';
-import Credentials from 'next-auth/providers/credentials';
-import { z } from 'zod';
-import bcrypt from 'bcrypt';
+"use client";
+import { useState } from 'react';
+import { useRouter } from 'next/navigation';
+import { getAuth, signInWithEmailAndPassword, createUserWithEmailAndPassword, signOut, sendPasswordResetEmail } from 'firebase/auth';
+import { setCookie, destroyCookie } from 'nookies';
+import { GoogleAuthProvider, signInWithPopup, OAuthProvider } from 'firebase/auth';
+import {jwtDecode} from 'jwt-decode';
+import { auth } from '@/firebaseConfig';
 
-export const authConfig = {
-    pages: {
-        signIn: '/login',
-    },
-    callbacks: {
-        authorized({ auth, request: { nextUrl } }) {
-            const isLoggedIn = !!auth?.user;
-            const isOnDashboard = nextUrl.pathname.startsWith('/dashboard');
-            if (isOnDashboard) {
-                if (isLoggedIn) return true;
-                return false; // Redirect unauthenticated users to login page
-            } else if (isLoggedIn) {
-                return Response.redirect(new URL('/dashboard', nextUrl));
-            }
-            return true;
-        },
-    },
-    providers: [], // Add providers with an empty array for now
-} satisfies NextAuthConfig;
+interface AuthState {
+    message: string;
+}
 
-export default NextAuth(authConfig).auth;
+ type OAuthProviderName = 'vk' | 'yandex' | 'mailru' | 'google' ;
 
-export const config = {
-    // https://nextjs.org/docs/app/building-your-application/routing/middleware#matcher
-    matcher: ['/((?!api|_next/static|_next/image|.*\\.png$).*)'],
+
+type ActionType = 'signin' | 'register';
+
+const useActionState = (): [
+    AuthState,
+    (email: string, password: string, actionType: ActionType) => Promise<void>,
+    () => Promise<void>,
+    (providerName: OAuthProviderName) => Promise<void>,
+    (email: string) => Promise<void>
+] => {
+
+    const [state, setState] = useState<AuthState>({ message: '' });
+    const router = useRouter();
+
+    const authenticate = async (email: string, password: string, actionType: ActionType): Promise<void> => {
+        // const auth = getAuth();
+
+        try {
+            let userCredential: any;
+            if (actionType === 'signin') {
+                userCredential = await signInWithEmailAndPassword(auth, email, password);
+            } else if (actionType === 'register') {
+                userCredential = await createUserWithEmailAndPassword(auth, email, password);
+            } 
+
+            const token = await userCredential.user.getIdToken();
+            const decodedToken = jwtDecode<{ name: string }>(token);
+
+            // Set JWT token in cookies
+            setCookie(null, 'token', token, {
+                maxAge: 30 * 24 * 60 * 60,
+                path: '/',
+            });
+
+            // Redirect to dashboard after successful sign-in or registration
+            router.push('/');
+
+            // Set user data in the state
+            setState({
+                message: `Welcome ${decodedToken.name}`,
+            });
+        } catch (error: any) {
+            setState({
+                message: error.message,
+            });
+        }
+    };
+
+    const signout = async (): Promise<void> => {
+        
+        await signOut(auth);
+
+        // Destroy session cookie
+        destroyCookie(null, 'token');
+
+        router.push('/login');
+    };
+
+    
+
+    const handleOAuthLogin = async (providerName: OAuthProviderName): Promise<void> => {
+        let provider: OAuthProvider;
+
+        switch (providerName) {
+            case 'vk':
+                provider = new OAuthProvider('vk.com');
+                break;
+            case 'yandex':
+                provider = new OAuthProvider('yandex.ru');
+                break;
+            case 'mailru':
+                provider = new OAuthProvider('mail.ru');
+                break;
+            case 'google':
+                    provider = new OAuthProvider('google.com');
+                    break;
+            default:
+                throw new Error('Unknown provider');
+        }
+
+        try {
+            const result = await signInWithPopup(auth, provider);
+            const token = await result.user.getIdToken();
+            const decodedToken = jwtDecode<{ name: string }>(token);
+
+            // Set JWT token in cookies
+            setCookie(null, 'token', token, {
+                maxAge: 30 * 24 * 60 * 60,
+                path: '/',
+            });
+
+            // Redirect to dashboard after successful login
+            router.push('/');
+
+            // Set user data in the state
+            setState({
+                message: `Welcome ${decodedToken.name}`,
+            });
+        } catch (error: any) {
+            setState({
+                message: error.message,
+            });
+        }
+    };
+
+    const forgotPassword = async (email: string): Promise<void> => {
+
+        try {
+            await sendPasswordResetEmail(auth, email);
+            setState({
+                message: 'Password reset email sent. Please check your inbox.',
+            });
+        } catch (error: any) {
+            setState({
+                message: error.message,
+            });
+        }
+    };
+
+
+
+    return [state, authenticate, signout, handleOAuthLogin, forgotPassword];
+
 };
 
-export const { auth, signIn, signOut } = NextAuth({
-    ...authConfig,
-    providers: [
-        Credentials({
-            async authorize(credentials) {
-                const parsedCredentials = z
-                    .object({ email: z.string().email(), password: z.string().min(6) })
-                    .safeParse(credentials);
-
-                if (parsedCredentials.success) {
-                    const { email, password } = parsedCredentials.data;
-                    const user = await getUser(email);
-                    if (!user) return null;
-                }
-
-                return null;
-            },
-        }),
-    ],
-});
-
-async function getUser(email: string): Promise<any | undefined> {
-    try {
-        // const user = await sql<User>`SELECT * FROM users WHERE email=${email}`;
-        // return user.rows[0];
-    } catch (error) {
-        console.error('Failed to fetch user:', error);
-        throw new Error('Failed to fetch user.');
-    }
-}
-
-export async function authenticate(prevState: string | undefined, formData: FormData) {
-    try {
-        await signIn('credentials', formData);
-    } catch (error) {
-        if (error instanceof AuthError) {
-            switch (error.type) {
-                case 'CredentialsSignin':
-                    return 'Invalid credentials.';
-                default:
-                    return 'Something went wrong.';
-            }
-        }
-        throw error;
-    }
-}
+export { useActionState };

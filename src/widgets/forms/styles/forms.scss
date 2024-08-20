@@ -1,10 +1,8 @@
-
-
 .form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    @media(max-width: 768px) {
+    @media (max-width: 768px) {
         justify-content: stretch;
     }
     &_title {
@@ -12,13 +10,13 @@
         width: 100%;
         max-width: 685px;
         margin: 0 0 20px 0;
-        @media(max-width: 768px) {
+        @media (max-width: 768px) {
             width: auto;
             margin-right: 35px;
             margin-left: 35px;
             text-align: start;
         }
-        @media(max-width: 420px) {
+        @media (max-width: 420px) {
             margin-right: 15px;
             margin-left: 15px;
         }
@@ -28,18 +26,18 @@
         font-size: 20px;
         margin-bottom: 30px;
         width: 100%;
-        @media(max-width: 768px) {            
+        @media (max-width: 768px) {
             text-align: start;
             margin-right: auto;
             padding-right: 35px;
             margin-left: 35px;
             font-size: 1.2em;
         }
-        @media(max-width: 420px) {
+        @media (max-width: 420px) {
             width: auto;
-            margin-right: 15px;
-            margin-left: 15px;
-            font-size: 0.9em;
+            margin-right: 0;
+            margin-left: 0;
+            font-size: 18px;
         }
     }
     &_input {
@@ -122,7 +120,6 @@
         width: 100%;
         height: 100%;
         color: #fff;
-        
     }
     &_voiceover {
         max-width: 730px;
@@ -133,7 +130,7 @@
             margin: auto;
             display: flex;
             flex-wrap: wrap;
-            @media(max-width: 420px) {
+            @media (max-width: 420px) {
                 flex-direction: column;
             }
         }
@@ -152,7 +149,7 @@
                 height: 100%;
                 border: 0;
                 border-bottom: 1px solid #e0e1e5;
-                @media(max-width: 500px) {
+                @media (max-width: 500px) {
                     justify-content: space-between;
                 }
                 &__element {
@@ -172,7 +169,7 @@
                         margin-right: 7px;
                     }
                     &--text {
-                        @media(max-width: 500px) {
+                        @media (max-width: 500px) {
                             display: none;
                         }
                     }
@@ -227,16 +224,16 @@
                     height: 100%;
                     width: 80px;
                     transition: 0.3s;
-                    @media(max-width: 500px) {
-                        width: 60px;
+                    @media (max-width: 500px) {
+                        width: 40px;
                     }
                     .close-btn {
                         background: url('/ico/close.png');
                         width: 40px;
                         height: 40px;
-                        @media(max-width: 500px) {
-                            width: 30px;
-                            height: 30px;
+                        @media (max-width: 500px) {
+                            width: 20px;
+                            height: 20px;
                         }
                         cursor: pointer;
                         border-radius: 30px;
@@ -273,8 +270,8 @@
                     outline: none;
                     font-size: 20px;
                     overflow: auto;
-                    @media(max-width: 500px) {
-                        width: calc(100% - 60px);
+                    @media (max-width: 500px) {
+                        width: calc(100% - 30px);
                     }
                 }
             }
@@ -393,8 +390,9 @@
             position: relative;
             width: 100%;
             padding-left: 0.5rem;
-            @media(max-width: 500px) {
+            @media (max-width: 500px) {
                 flex-direction: column;
+                padding-left: 0;
             }
             .form_select__wrapper {
                 width: 50%;
@@ -403,7 +401,7 @@
                 display: flex;
                 flex-wrap: wrap;
                 align-items: stretch;
-                @media(max-width: 500px) {
+                @media (max-width: 500px) {
                     width: 100%;
                 }
                 select {
@@ -428,7 +426,7 @@
                     transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
                         box-shadow 0.15s ease-in-out;
                     padding-left: 1.5rem;
-                    @media(max-width: 500px) {
+                    @media (max-width: 500px) {
                         padding-left: 1rem;
                         max-width: 98%;
                     }

@@ -11,6 +11,9 @@
     &__socials {
         display: flex;
         margin-top: 20px;
+        @media (max-width: 426px) {
+            justify-content: space-between;
+        }
         & a {
             text-decoration: none;
             background-color: rgba(0, 0, 0, 0);

@@ -1,1 +1,1 @@
-.header{display:flex;justify-content:space-between;align-items:center;padding:1rem;margin-bottom:60px}
+.header{display:flex;justify-content:space-between;align-items:center;padding:.5rem 1rem 1rem 1rem;margin-bottom:50px;width:60%;margin:auto}@media(max-width: 768px){.header{margin-bottom:0;padding-left:0;padding-right:0;max-width:92vw;width:92vw}}@media(max-width: 420px){.header{margin-bottom:15px;padding-left:0;padding-right:0}}

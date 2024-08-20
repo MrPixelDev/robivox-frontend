@@ -26,11 +26,11 @@ export default function RootLayout({
         <html>
             <body className={openSans.className}>
                 <LineBanner />
+                <Header />
                 <div className="container">
-                    <Header />
                     <main className="main">{children}</main>
-                    <Footer />
                 </div>
+                <Footer />
             </body>
         </html>
     );

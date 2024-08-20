@@ -5,7 +5,7 @@
 // @include font("Open Sans", "./OpenSans-VariableFont_wdth,wght.ttf");
 
 ::-webkit-scrollbar {
-    width: 10px;
+    // width: 10px;
     &-track {
         background: #e0e0e0;
         &:hover {
@@ -25,6 +25,7 @@ body:first-child {
 html {
     background-color: #f7f8fb;
     overflow-x: hidden;
+    scrollbar-width: thin;
 }
 
 .app {
@@ -37,21 +38,27 @@ html {
     margin: auto;
     text-align: center;
     line-height: 1.5;
+    letter-spacing: 0.01em;
     @media (max-width: 768px) {
-        max-width: 95vw;
-        width: 95vw;
+        max-width: 92vw;
+        width: 92vw;
+        // margin: 0 15px   ;
         // margin: 0 1em;
     }
 
     .h1 {
         font-size: 2.1rem;
         font-weight: 700;
-        line-height: 140%;
-        @media(max-width: 768px) {
+        line-height: 1.2;
+        @media (max-width: 768px) {
+            line-height: 1.2;
             font-size: 1.9em;
+            margin-left: 0;
+            margin-right: 0;
         }
-        @media(max-width: 420px) {
-            font-size: 1.3em;
+        @media (max-width: 420px) {
+            font-size: 1.7rem;
+            line-height: 1.2;
         }
         // margin: 60px 0;
     }

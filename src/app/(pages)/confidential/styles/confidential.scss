@@ -9,6 +9,9 @@
             letter-spacing: 0.01em;
             font-size: 2.5rem;
             line-height: 1.2;
+            @media (max-width: 426px) {
+                font-size: 1.65rem;
+            }
         }
     }
     &__text {
@@ -30,6 +33,7 @@
                 color: #637683;
                 font-weight: 600;
                 margin-bottom: 20px;
+                padding-left: 1rem;
             }
         }
         &-ul {

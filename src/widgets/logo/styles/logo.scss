@@ -1,12 +1,36 @@
 .logo {
     position: relative;
-    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    @media (max-width: 767px) {
+        height: 33px;
+        max-width: 50%;
+    }
     &-text {
-        margin: -5px 10px;
-        font-size: 1.9rem;
+        margin: 0 10px;
+        font-size: 30px;
         font-weight: 700;
+        @media (max-width: 426px) {
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 1.7;
+        }
     }
     &-img {
+        max-height: 50px;
+        width: auto;
+        height: 38px;
+        @media (max-width: 767px) {
+            max-height: 45px;
+            width: auto;
+            height: auto;
+        }
+        @media (max-width: 426px) {
+            max-width: 25px;
+            // margin-top: 4px;
+        }
     }
     & > a {
         // display: block;
@@ -19,6 +43,8 @@
     }
     .flex {
         display: flex;
-        height: 100%;
+        justify-content: center;
+        align-items: center;
+        // height: 100%;
     }
 }

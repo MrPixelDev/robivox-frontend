@@ -6,7 +6,7 @@
         margin: 24px auto 0;
         border-top: 1px solid #ececec;
         max-width: 730px;
-        @media(max-width: 420px) {
+        @media (max-width: 420px) {
             flex-direction: column;
         }
     }
@@ -14,13 +14,14 @@
         position: relative;
         text-align: left;
         height: 100%;
-        @media(max-width: 768px) {
+        margin-bottom: 1rem;
+        @media (max-width: 768px) {
             font-size: 2.5vw;
         }
-        @media(max-width: 420px) {
+        @media (max-width: 420px) {
             border-right: 1px solid rgba(49, 50, 57, 0);
             padding: 0 1vw;
-            font-size: 4.5vw;
+            font-size: 3.7vw;
         }
 
         .section_header {
@@ -32,7 +33,7 @@
 
         .section_links {
             &__link {
-                margin: 1rem 0;
+                margin: 0.5rem 0;
             }
         }
 
